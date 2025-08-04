@@ -1,0 +1,57 @@
+customer data
+customer data platform
+CDP
+customer 360
+identity resolution
+data enrichment
+audience segmentation
+real-time data
+data streaming
+event stream
+low latency
+event-level data
+Kafka
+real-time personalization
+data collection
+data quality
+clean data
+first-party data
+zero-party data
+data governance
+data fragmentation
+data unification
+data pipelines
+consent management
+GDPR
+CCPA
+HIPAA
+privacy compliance
+privacy-safe
+data regulation
+AI-ready data
+training data
+LLM fine-tuning
+enterprise LLM
+data for AI
+structured data for LLMs
+data layer
+server-side tracking
+ETL
+ELT
+Snowflake
+Databricks
+event ingestion
+schema evolution
+data mesh
+data observability
+data warehouse
+tag management
+data stitching
+Tealium
+Segment
+RudderStack
+mParticle
+Adobe CDP
+Salesforce CDP
+GA4
+OneTrust
