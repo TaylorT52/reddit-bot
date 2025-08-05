@@ -24,7 +24,7 @@ class RedditBot:
         self.accounts = json.load(open("accounts.json"))
         self.account = random.choice(self.accounts)
         self.KEYWORDS = [line.strip().lower() for line in open("keywords.txt")]
-        self.SUBREDDITS = ["dataengineering", "martech"]
+        self.SUBREDDITS = ["dataengineering", "martech", "marketingautomation", "marketing", "digitalmarketing", "dataisbeautiful", "marketingops", "CRM"]
         self.start_time = datetime.now()
         self.posts_processed = 0
         self.matches_found = 0
