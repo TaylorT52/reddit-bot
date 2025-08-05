@@ -9,9 +9,8 @@ venv/
 logs/
 *.log
 
-# Scripts and test files
-run_continuous.sh
-test_credentials.py
+#secrets 
+*.json
 
 # OS / editor / IDE artifacts
 .DS_Store
