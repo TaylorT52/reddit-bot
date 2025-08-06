@@ -23,7 +23,7 @@ class RedditBot:
     def __init__(self):
         self.accounts = json.load(open("accounts.json"))
         self.account = random.choice(self.accounts)
-        self.KEYWORDS = [line.strip().lower() for line in open("keywords.txt")]
+        self.KEYWORDS = [line.strip().lower() for line in open("info/keywords.txt")]
         self.SUBREDDITS = ["dataengineering", "martech", "marketingautomation", "marketing", "digitalmarketing", "dataisbeautiful", "marketingops", "CRM"]
         self.start_time = datetime.now()
         self.posts_processed = 0
@@ -70,7 +70,15 @@ class RedditBot:
             
             full_text = title_lower + " " + content_lower
             
+            # Debug: Log what we're checking
+            logger.info(f"Checking post: '{post.title}'")
+            logger.info(f"Title: '{title_lower}'")
+            logger.info(f"Content preview: '{content_lower[:100]}...'")
+            
             matched_keywords = [k for k in self.KEYWORDS if k in full_text]
+            
+            # Debug: Log all keywords being checked
+            logger.info(f"Checking {len(self.KEYWORDS)} keywords against text: {full_text}")
             
             if matched_keywords:
                 self.matches_found += 1

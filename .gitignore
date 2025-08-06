@@ -11,6 +11,7 @@ logs/
 
 #secrets 
 *.json
+*.csv
 
 # OS / editor / IDE artifacts
 .DS_Store
